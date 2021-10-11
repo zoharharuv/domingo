@@ -1,0 +1,83 @@
+.board-nav {
+    display: flex;
+    padding: 0.35em;
+    height: 100vh;
+    width: 4.25rem;
+    flex-direction: column;
+    justify-content: space-between;
+    @include for-narrow-layout {
+        flex-direction: row;
+        height: 4.25rem;
+        width: 100vw;
+    }
+    color: white;
+    background-color: #292f4c;
+    .icon {
+        cursor: pointer;
+        height: 1.25rem;
+        width: 1.25rem;
+        font-size: 2rem;
+        color: #fff;
+        text-transform: none;
+        transform: translateX(-15%);
+        @include for-narrow-layout {
+            transform: translate(0, 5%);
+            height: unset;
+            width: unset;
+        }
+    }
+    .top-nav {
+        gap: 1em;
+        @include for-narrow-layout {
+            flex-direction: row;
+            padding-left: 16px;
+        }
+        .nav-logo {
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+        .boards-icon {
+            z-index: 1;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    .user-greeting {
+        background-color: #00ca73;
+        color: #fefefe;
+        border-radius: 0 0 1.25rem 1.25rem;
+        transform: rotate(-90deg) translateY(-70px);
+        z-index: 2;
+        position: fixed;
+        left: 0;
+        top: 50%;
+        font-size: 1.125rem;
+        text-align: center;
+        width: 10rem;
+        @include for-narrow-layout {
+            display: none;
+        }
+    }
+    .bottom-nav {
+        gap: 1.5em;
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        @include for-narrow-layout {
+            flex-direction: row;
+            gap: 15px;
+            padding-bottom: 0;
+            transform: translateY(-5%);
+            .MuiAvatar-circular {
+                width: 32px !important;
+                height: 32px !important;
+            }
+        }
+    }
+}

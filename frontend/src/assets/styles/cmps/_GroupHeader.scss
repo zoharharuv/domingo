@@ -1,0 +1,96 @@
+.group-header {
+    padding-bottom: 0.25rem;
+    .group-header-left {
+        position: sticky;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        @include for-narrow-layout {
+            left: 3%;
+        }
+        flex: 1;
+        background: #ffffff;
+        // GROUP HEADER LEFT FOCUS
+        &.focus {
+            position: relative;
+            border: 1px dashed #c4c4c4;
+            .drag-icon {
+                display: none;
+            }
+            .color-cont {
+                max-width: 1.25rem;
+                flex: 1;
+            }
+        }
+        .group-title {
+            border: 1px dashed transparent;
+            text-overflow: ellipsis;
+            max-width: 40ch;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 1.1rem;
+            @include for-narrow-layout {
+                max-width: 20ch;
+            }
+            &:hover {
+                border: 1px dashed #c4c4c4;
+            }
+            &.input {
+                font-family: unset;
+                font-size: unset;
+                outline: none;
+                border: none;
+                color: inherit;
+            }
+        }
+        .drag-icon {
+            color: #c4c4c4;
+            cursor: all-scroll;
+            opacity: 0;
+            width: 0px;
+            transition: all 0.2s ease-out;
+        }
+        .color-cont {
+            &.open {
+                flex: 1;
+            }
+            transition: 0.05s ease-in;
+            flex: 0.00001;
+        }
+        // GROUP HEADER LEFT HOVER
+        &:hover {
+            .drag-icon {
+                width: 20px;
+                opacity: 1;
+            }
+        }
+        @include for-narrow-layout {
+            .drag-icon {
+                width: 20px;
+                opacity: 1;
+            }
+        }
+    }
+
+    .group-header-right {
+        // gap: 5px;
+        padding-inline-end: 10px;
+        div {
+            // position: relative;
+            // left:10px;
+            max-width: 9.375rem;
+            min-width: 9.375rem;
+            display: flex;
+            justify-content: center;
+            &.test {
+                transform: translateX(-5%);
+            }
+            span {
+                // box-shadow: 0px 0px 1px 1px black;
+                color: #323338;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}

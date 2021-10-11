@@ -1,0 +1,154 @@
+@font-face {
+    font-family: roboto-thin;
+    src: url("../../fonts/roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: url("../../fonts/roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url("../../fonts/roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url("../../fonts/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: sofia-regular;
+    src: url("../../fonts/sofia/SofiaProRegularAz.otf");
+}
+
+@font-face {
+    font-family: sofia-light;
+    src: url("../../fonts/sofia/SofiaProLightAz.otf");
+}
+@font-face {
+    font-family: sofia-light;
+    src: url("../../fonts/sofia/SofiaProLightAz.otf");
+}
+@font-face {
+    font-family: open-sans-bold-strong;
+    src: url("../../fonts/open-sans/Rubik-Medium.ttf");
+}
+@font-face {
+    font-family: open-sans-regular;
+    src: url("../../fonts/open-sans/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: open-sans-bold;
+    src: url("../../fonts/open-sans/OpenSans-SemiBold.ttf");
+}
+
+// FAS FONTS
+
+@font-face {
+    font-family: awe-reg;
+    src: url("../../fonts/font-awesome/fa-regular-400.ttf");
+}
+
+@font-face {
+    font-family: awe-solid;
+    src: url("../../fonts/font-awesome/fa-solid-900.ttf");
+}
+
+// FAS ICONS
+.far::before {
+    font-family: awe-reg;
+}
+
+.fas::before {
+    font-family: awe-solid;
+}
+
+.fas.fa-trash::before {
+    content: "\f1f8";
+}
+
+.fas.fa-info-circle::before {
+    content: "\f05a";
+}
+
+.fas.fa-edit::before {
+    content: "\f044";
+}
+
+.fas.fa-th-large::before {
+    content: "\f009";
+}
+
+.fas.fa-plus::before {
+    content: "\f067";
+}
+
+.fas.fa-undo-alt::before {
+    content: "\f2ea";
+}
+
+.fas.fa-save::before {
+    content: "\f0c7";
+}
+
+.fas.fa-search::before {
+    content: "\f002";
+}
+
+.fas.fa-shopping-cart::before {
+    content: "\f07a";
+}
+
+.fas.fa-sign-out-alt::before {
+    content: "\f2f5";
+}
+
+.fas.fa-sign-in-alt::before {
+    content: "\f2f6";
+}
+
+.fas.fa-times::before {
+    content: "\f00d";
+}
+
+.fas.fa-search::before {
+    content: "\f002";
+}
+
+.fas.fa-angle-double-right::before {
+    content: "\f101";
+}
+.fas.fa-filter::before {
+    content: "\f0b0";
+}
+.fas.fa-bell::before {
+    content: "\f0f3";
+}
+.fas.fa-chart-column::before {
+    content: "\f201";
+}
+.fas.fa-chart-calendar::before {
+    content: "\f272";
+}
+.fas.fa-chart-logout::before {
+    content: "\f2f5";
+}
+.fas.fa-chevron-right::before {
+    content: "\f054";
+}
+.fas.fa-caret-down::before {
+    content: "\f0d7";
+}
+
+.fas.fa-user-plus::before {
+    content: "\f234";
+}
+
+.fas.fa-ellipsis-h::before {
+    content: "\f141";
+}
+.far.fa-comment::before {
+    content: "\f075";
+}

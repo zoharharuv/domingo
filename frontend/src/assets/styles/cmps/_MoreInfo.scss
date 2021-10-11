@@ -1,0 +1,33 @@
+.more-info {
+    &.open {
+        color: #0073ea;
+        background-color: #cce5ff !important;
+    }
+}
+
+.MuiPaper-root {
+    border-radius: 8px !important;
+}
+
+.MuiPaper-elevation8 {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px !important;
+}
+
+.MuiMenu-list {
+    padding: 8px !important;
+    border-radius: 50px;
+    li {
+        span {
+            font-weight: 400;
+            letter-spacing: 0px;
+            white-space: nowrap;
+            color: #323338;
+            font-size: 0.875rem;
+            border-radius: 4px;
+        }
+        padding: 4px 8px;
+    }
+    li:hover {
+        background-color: #e6e9ef;
+    }
+}

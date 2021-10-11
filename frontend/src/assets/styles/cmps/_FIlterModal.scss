@@ -1,0 +1,53 @@
+.filter-modal {
+    gap: 20px;
+    padding: 1rem;
+
+    h1 {
+        font-size: 1em;
+        color: #323338;
+        align-self: center;
+    }
+    .filter-column {
+        .filter-item {
+            padding: 7px;
+            color: #323338;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #f5f6f8;
+
+            &:hover {
+                background: #e6e9ef;
+            }
+            &.label {
+                width: 9.2375rem;
+                color: white;
+                text-align: center;
+            }
+            .text {
+                text-overflow: ellipsis;
+                max-width: 10ch;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            &.text {
+                text-overflow: ellipsis;
+                max-width: 15ch;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+}
+.clear-all-btn {
+    border: none;
+    background: transparent;
+    align-self: flex-end;
+    padding: 0.3rem;
+    font-size: 14px;
+    border: 1px solid #c7cbd4;
+    border-radius: 5px;
+    &:hover{
+        background: #cbe4fe;
+    }
+}
+

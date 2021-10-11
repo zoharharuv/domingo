@@ -1,0 +1,104 @@
+.member-picker {
+    position: relative;
+    cursor: pointer;
+    .empty-member {
+        width: 32px;
+        width: 26px;
+    }
+    .add-members {
+        .MuiSvgIcon-root {
+            height: 15px;
+            width: 15px;
+            background: transparent;
+            color: #0073ea;
+        }
+        position: absolute;
+        opacity: 0;
+        font-size: 0.5rem;
+        top: 30%;
+        left: 7%;
+    }
+    .MuiAvatar-colorDefault {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    &:hover {
+        .add-members {
+            opacity: 1;
+        }
+    }
+}
+
+.members-picker-menu {
+    .MuiMenu-list {
+        // overflow: auto;
+        // max-height: 260px;
+        // padding: 15px !important;
+        gap: 15px;
+    }
+    .task-members {
+        // flex-wrap: wrap;
+        max-width: 260px;
+        // justify-content: space-evenly;
+        flex-direction: column;
+        .member-name {
+            max-width: 20ch;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    .remove-member-item {
+        // max-width: 260px;
+        z-index: 5;
+        background-color: #e5f4ff;
+        height: 22px;
+        border-radius: 10px;
+        margin: 4px;
+        cursor: unset;
+        &:hover {
+            background-color: #e5f4ff !important;
+        }
+        .remove-member-item-content {
+            font-size: 0.7rem;
+        }
+        .remove-member-btn {
+            height: 1rem;
+            width: 1rem;
+            font-size: 0.8rem;
+            border-radius: 100%;
+            cursor: pointer;
+            margin-left: 4px;
+            margin-right: 2px;
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+    .members-divider-container {
+        position: relative;
+        width: 100%;
+        margin: 1rem 0;
+        .members-divider-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: white;
+            padding: 0 0.8rem;
+            font-size: 0.8rem;
+            color: #a9a9a9;
+        }
+    }
+    .add-member-item {
+        min-width: 260px;
+        z-index: 5;
+        &:hover {
+            color: #fff;
+            background-color: #0073ea !important;
+        }
+        & .add-member-item-content {
+            font-size: 0.8rem;
+        }
+    }
+}

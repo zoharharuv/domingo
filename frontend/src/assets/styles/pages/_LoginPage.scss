@@ -1,0 +1,94 @@
+.login-page {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #f2f2f2;
+    .login-page-container{
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 500px;
+        height: 500px;
+        @include for-narrow-layout{
+            height: unset;
+            width: unset;
+        }
+        .login-section-title{
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 100%;
+            height: 60px;
+            padding: 10px 0;
+            font-family: 'sofia-regular';
+            color: #fff;
+            background: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+            margin-bottom: 20px;
+            @include for-narrow-layout{
+                margin-bottom: unset;
+                width: 300px;
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin: 1.25rem 0;
+        }
+        .login-field-error{
+            color: #f62b54;
+            bottom: -25%;
+            right: 0%;
+            font-size: 0.7rem;
+        }
+        .btn-link {
+            span {
+                cursor: pointer;
+                color: $clr2;
+                text-decoration: underline;
+                transition: 0.2s;
+                &:hover {
+                    color: $clr1;
+                    text-decoration: none;
+                }
+            }
+        }
+        .login-divider-container {
+            position: relative;
+            width: 240px;
+            margin: 1.5rem 0;
+            .login-divider-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background: white;
+                padding: 0 1.1rem;
+                color: #a9a9a9;
+            }
+        }
+        .facebook-login {
+            color: #3a5a97;
+            padding: 5px;
+            border-radius: 10px;
+            transition: color 0.2s ease-in;
+            .facebook-logo {
+                background: transparent;
+            }
+            .facebook-btn {
+                font-size: 1rem;
+                font-weight: 600;
+                border: none;
+                background: inherit;
+                background: #fff;
+            }
+            &:hover {
+                color: #27406e;
+            }
+        }
+    }
+}
+    

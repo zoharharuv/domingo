@@ -1,0 +1,16 @@
+.board-app {
+  display: flex;
+  position: relative;
+  @include for-narrow-layout {
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+
+.board-container {
+  height: 100vh;
+  overflow: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

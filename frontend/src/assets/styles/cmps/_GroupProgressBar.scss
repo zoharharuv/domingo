@@ -1,0 +1,19 @@
+.group-progress-bar {
+    padding: 8px;
+    gap: 1px;
+    .status-progress,
+    .priority-progress {
+        width: 9.375rem;
+
+        background:#f5f6f8;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 0.3em;
+        .group-progress-item {
+            transition: 0.2s ease-in;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

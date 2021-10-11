@@ -1,0 +1,112 @@
+.group-preview {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0 2rem;
+    .task-add {
+        opacity: 0.6;
+        border-right: 5px solid rgba(0, 0, 0, 0.1);
+        transition: opacity 0.2s ease-in;
+        &:hover {
+            opacity: 1;
+        }
+        .task-add-form {
+            border: 1px solid transparent;
+            &:hover {
+                border: 1px solid black;
+            }
+            &:focus-within {
+                border: unset;
+            }
+            .task-add-input {
+                position: relative;
+                outline: none;
+                width: 100%;
+                opacity: 0.6;
+                height: 2rem;
+
+                &::placeholder {
+                    color: rgb(65, 65, 65);
+                }
+            }
+            .add-btn {
+                // position: sticky;
+                position: sticky;
+                transition: 0.4s;
+                right: 0;
+                opacity: 0;
+                transform: translateX(100%);
+                color: white;
+                background-color: #0073ea;
+                border: none;
+                height: 32px;
+                width: 35px;
+            }
+            &:focus-within {
+                .add-btn {
+                    transform: translateX(-11%);
+                    opacity: 1;
+                }
+                .task-add-input {
+                    color: black;
+                    line-height: 1.5;
+                    font-weight: 500;
+                    background: white;
+                    border: 1px #0073ea solid;
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
+
+// TROUBLEY BUTTONNNN
+.group-expand-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translateY(35%);
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    .more-info {
+        min-width: unset !important;
+        position: relative;
+        .MuiButton-label {
+            min-width: unset !important;
+            position: relative;
+            svg {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                color: #ffffff;
+            }
+        }
+        // OPEN
+        &.open {
+            padding: 8px;
+            border-radius: 50%;
+            background-color: #cce5ff !important;
+            .MuiButton-label {
+                svg {
+                    border-radius: 50%;
+                    color: #0073ea;
+                }
+            }
+        }
+    }
+    // TOTAL HOVER
+    &:hover {
+        background-color: transparent !important;
+        .more-info {
+            color: inherit;
+            .MuiButton-label {
+                color: inherit;
+                svg {
+                    color: inherit;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.backdrop {
+    z-index: 5;
+    position: fixed;
+    background: #292f4cb3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+}

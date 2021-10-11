@@ -1,0 +1,49 @@
+.invite-members {
+    height: 100%;
+    gap: 1rem;
+    .invite-members-header {
+        font-size: 24px;
+        font-family: "roboto-thin";
+    }
+    input {
+        color: #c5c9d0;
+        height: 35px;
+        outline: 0;
+        border-radius: 3px;
+        border: 1px #c5c9d0 solid;
+        padding: 2px 0px 3px 6px;
+        &::placeholder {
+            color: rgb(93, 93, 93);
+        }
+        &:hover {
+            border: 1px #333333 solid;
+        }
+        &:focus {
+            color: rgb(93, 93, 93);
+            font-size: 12px;
+            border: 1px #0085ff solid;
+        }
+    }
+    .members-container {
+        height: 100%;
+        overflow: auto;
+        .user-link{
+            font-size: 15px;
+            font-family: 'roboto-medium';
+            cursor: pointer;
+            a{
+                color: inherit;
+            }
+            &:hover{
+                color: #0073ea;
+            }
+        }
+        .board-members{
+            padding-bottom: 10px;
+        }
+        h3{
+            padding: 10px 0px;
+            border-top: 1px solid #c5c9d0;
+        }
+    }
+}

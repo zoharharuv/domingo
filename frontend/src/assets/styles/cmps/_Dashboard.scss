@@ -1,0 +1,209 @@
+.dashboard-container {
+    max-width: 70vw;
+    height: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "card card card card"
+        "circular member member member"
+        "priority task task task";
+    @include for-normal-layout {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 120px 1fr 1fr 400px;
+        grid-template-areas:
+            "card card card card"
+            "member member member member"
+            "priority priority circular circular"
+            "task task task task";
+    }
+    @include for-max-narrow-layout {
+        max-width: 85vw;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr 250px 1fr 350px 1fr;
+        grid-template-areas:
+            "card card card card"
+            "task task task task"
+            "priority priority priority priority"
+            "member member member member"
+            "circular circular circular circular";
+    }
+    .header {
+        color: white;
+        padding: 1em;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 100px;
+        // width: 200px;
+        flex-basis: 20%;
+        align-self: center;
+        justify-content: space-evenly;
+        @include for-normal-layout {
+            width: 130px;
+            height: 70px;
+        }
+        @include for-narrow-layout {
+            width: 160px;
+            height: 70px;
+        }
+        @include for-max-narrow-layout {
+            width: unset;
+        }
+
+        .card-counter {
+            font-size: 1.5em;
+
+            @include for-narrow-layout {
+                font-size: 1rem;
+            }
+        }
+        .round-svg {
+            border: 1px solid white;
+            border-radius: 50%;
+            padding: 4px;
+            font-size: 3rem;
+        }
+        .MuiSvgIcon-root {
+            color: white;
+            font-size: 3rem;
+            @include for-normal-layout {
+                font-size: 2.3rem;
+            }
+        }
+    }
+    .dashboard-header {
+        grid-area: card;
+        @include for-narrow-layout {
+            row-gap: 15px;
+            justify-items: center;
+            flex-basis: unset;
+            justify-content: unset;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "one two"
+                "three four";
+        }
+        @include for-max-narrow-layout {
+            justify-items: normal;
+            gap: 15px;
+        }
+    }
+
+    .cards-header {
+        // display: flex;
+        // gap: 15px;
+        & > * {
+            color: white;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height: 100px;
+            width: 200px;
+            @include for-normal-layout {
+                height: 80px;
+                width: 135px;
+            }
+            @include for-max-narrow-layout {
+                height: 55px;
+            }
+
+            .card-counter {
+                font-size: 1.5em;
+
+                @include for-narrow-layout {
+                    font-size: 1rem;
+                }
+            }
+            .round-svg {
+                border: 1px solid white;
+                border-radius: 50%;
+                padding: 4px;
+                font-size: 3rem;
+            }
+            .MuiSvgIcon-root {
+                color: white;
+                font-size: 3rem;
+                @include for-normal-layout {
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+    .card-members {
+        background: linear-gradient(96deg, rgba(105, 155, 254, 1) 0%, rgba(64, 129, 254, 1) 100%);
+        grid-area: one;
+    }
+    .card-groups {
+        background: linear-gradient(to right top, #fab823, #f9a315, #f68d0c, #f3770d, #ee5f13);
+        grid-area: two;
+    }
+    .card-activities {
+        background: linear-gradient(to right, #11998e, #38ef7d);
+        grid-area: three;
+    }
+    .card-task {
+        background: linear-gradient(96deg, rgba(166, 112, 234, 1) 0%, rgba(124, 43, 226, 1) 100%);
+        grid-area: four;
+    }
+    .chart {
+        padding: 1.5rem 1.5em;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background: lighten($clr3, 0.3);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        // justify-content: space-around;
+    }
+
+    .dashboard-priority {
+        grid-area: priority;
+        // height: 100% !important;
+        // max-height: 300px !important;
+    }
+
+    .dashboard-circular {
+        grid-area: circular;
+        // max-height: 100% !important;
+
+        .count-title {
+            position: absolute;
+            color: #323338;
+            font-size: 2rem;
+            top: 50%;
+
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+    }
+    .dashboard-member {
+        grid-area: member;
+        canvas {
+            height: 300px !important;
+            flex: 1;
+        }
+    }
+    .dashboard-task {
+        grid-area: task;
+        canvas{
+            height: 300px !important;
+            max-height: 350px !important;
+
+            flex: 1;
+        }
+      
+    }
+
+    .dashboard-title {
+        // position: absolute;
+        font-size: 1.6rem;
+        font-family: sofia-regular;
+        // top: 0;
+        // left: 25%;
+    }
+}

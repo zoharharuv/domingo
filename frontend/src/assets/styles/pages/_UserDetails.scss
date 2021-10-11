@@ -1,0 +1,49 @@
+.user-details{
+  color:#676879;
+  display: flex;
+  @include for-narrow-layout{
+    flex-direction: column;
+  }
+  .user-details-container{
+    width: 100%;
+    height: 100vh;
+    @include for-narrow-layout{
+      height: calc(100vh - 4.25rem);
+    }
+    .user-details-header{
+      background-color: #0185ff;
+      height: 30%;
+    }
+    .user-details-body{
+      height: 70%;
+    }
+  }
+  .MuiTabs-flexContainer{
+    justify-content: center;
+  }
+  #activity-tabpanel-0,#activity-tabpanel-1{
+    display: flex;
+    justify-content: center;
+  }
+  input{
+    border: 1px #676879 solid;
+    color: #676879;
+  }
+  
+}
+
+.user-details-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width:90vw;
+  height: 60vh;
+  @include for-narrow-layout{
+    height: 54vh;
+    width:100vw;
+  }
+
+}
+

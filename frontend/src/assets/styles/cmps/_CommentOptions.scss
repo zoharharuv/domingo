@@ -1,0 +1,38 @@
+.like-replay-container{
+  border: 1px rgb(216, 216, 216) solid;
+  border-top: unset;
+  border-radius: 0px 0px 5px 5px;
+  width: 100%;
+  height: 2.8125rem;
+  .like-btn-container{
+    border-inline-end:1px rgb(216, 216, 216) solid; 
+    height: 100%;
+    width: 50%;
+   .like-btn{
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+     width: 97%;
+     height: 80%;
+     &:hover{
+       background-color: #e6e9ef;
+     }
+   }
+   
+  }
+  .reply-btn-container{
+    height: 100%;
+    width: 50%;
+    .reply-btn{
+      border: none;
+      background-color: transparent;
+      border-radius: 5px;
+      width: 97%;
+      height: 80%;
+      &:hover{
+        background-color: #e6e9ef;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,59 @@
+.user-msg {
+    font-family: Quicksand;
+    z-index: 30;
+    padding: 1rem;
+    font-size: 1.4em;
+    position: fixed;
+    bottom: 5%;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px #ccc;
+    button {
+        opacity: 0.5;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        right: 0;
+        border: 1px solid #178344;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 1.3rem;
+        border-radius: 50%;
+        padding: 0;
+    }
+    .close-btn {
+        color: #178344;
+        line-height: 28px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        font-size: 1.6em;
+        cursor: pointer;
+    }
+    &.success {
+        background-color: #a8f0c6;
+        border-left: 5px solid #178344;
+    }
+    &.danger {
+        background-color: #f62b54;
+        border-left: 5px solid #8f122b;
+        button{
+            border: 1px solid #8f122b;
+            .close-btn {
+                color: #8f122b;
+            }
+        }
+    }
+}
+
+.login-page{
+    .user-msg{
+        left: 0;
+    }
+}
+

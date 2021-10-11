@@ -1,0 +1,231 @@
+.home-header {
+    position: fixed;
+    top: 0;
+    padding: 1.2rem 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    color: #ffffff;
+    align-items: center;
+    transition: 0.2s;
+    // WHEN SCROLLED
+    &.scrolled {
+        background-color: #292f4cf6;
+    }
+    // SCREEN
+    .screen {
+        @include for-narrow-layout {
+            inset: 0;
+            background: #333333a2;
+            opacity: 0;
+            transition: opacity 0.2s;
+            pointer-events: none;
+            &.active {
+                cursor: pointer;
+                pointer-events: all;
+                opacity: 1;
+                position: fixed;
+                z-index: 10;
+            }
+        }
+    }
+    // INSIDE HEADER
+    .header-content {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.5rem;
+        @include for-max-narrow-layout {
+            padding: 0 0.3rem;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            transform: translateY(-5%);
+            .logo-svg {
+                transform: translateY(6%);
+                width: 2.2rem;
+                @include for-max-narrow-layout {
+                    width: 1.7rem;
+                }
+            }
+            h1 {
+                font-family: "sofia-regular";
+                color: #ffffff;
+                display: inline-block;
+                font-size: 2rem;
+                @include for-max-narrow-layout {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .get-started-btn {
+            padding: 0.75rem 1.25rem;
+            border-radius: 10rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            transition: 0.25s;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #f62b54;
+                border-radius: 10rem;
+                z-index: -2;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                background-color: darken(#f62b54, 15%);
+                transition: all 0.3s;
+                border-radius: 10rem;
+                z-index: -1;
+            }
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+            @include for-narrow-layout {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.8rem;
+                letter-spacing: 0.05rem;
+                &:after {
+                    background-color: #00ca72;
+                }
+                &:hover {
+                    &:before {
+                        width: 0%;
+                    }
+                }
+            }
+        }
+        nav {
+            z-index: 0;
+            background: transparent;
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            .user-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+                width: 120px;
+                a {
+                    color: white;
+                }
+                .login-btn,
+                .logout-btn {
+                    width: 100px;
+                    height: 40px;
+                    padding: 10px 0;
+                    border-radius: 4px;
+                    text-align: center;
+                    transition: 0.2s ease-out;
+                    background-color: #f5f5f5;
+                    &:hover {
+                        color: #f5f5f5;
+                        width: 120px;
+                    }
+                }
+                .login-btn {
+                    color: #257ee4;
+                    &:hover {
+                        background: #124f95;
+                    }
+                }
+                .logout-btn {
+                    color: #333;
+                    border: 1px solid #dddada;
+                    &:hover {
+                        background-color: #800b0b;
+                    }
+                }
+            }
+            // NAV IN MOBILE BP
+            @include for-narrow-layout {
+                z-index: 25;
+                background: $clr3;
+                position: fixed;
+                right: 0;
+                top: 0;
+                width: 25vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                transform: translateX(100%);
+                transition: transform 0.3s ease-in;
+                &.active {
+                    box-shadow: -2px 0px 10px 2px #eeecec21;
+                    transform: translateX(0%);
+                }
+                .user-info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 80px;
+                    width: 100%;
+                    a {
+                        color: white;
+                    }
+                    .login-btn,
+                    .logout-btn {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.2rem;
+                        width: 100%;
+                        height: 100%;
+                        padding: 10px 0;
+                        border-radius: 0px;
+                        background-color: #f5f5f5;
+                        color: #f5f5f5;
+                        &:hover {
+                            color: #f5f5f5;
+                            width: 100%;
+                        }
+                    }
+                    .login-btn {
+                        background: #124f95;
+                    }
+                    .logout-btn {
+                        border: none;
+                        background-color: #800b0b;
+                    }
+                }
+            }
+        }
+        // JUST TOGGLE
+        .hamburger-react {
+            display: none;
+            @include for-narrow-layout {
+                display: inline-block;
+                visibility: visible;
+                border: none;
+                color: #ffffff;
+                background-color: transparent;
+                padding: 7px 15px;
+                font-size: 1.3em;
+                transition: text-shadow 0.2s;
+            }
+        }
+    }
+}

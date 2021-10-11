@@ -1,0 +1,16 @@
+.home-layout {
+    margin: 0 auto !important;
+    max-width: 1200px !important;
+    @include for-normal-layout {
+        max-width: 800px !important;
+    }
+    @include for-narrow-layout {
+        max-width: 650px !important;
+    }
+    @include for-max-narrow-layout {
+        max-width: 480px !important;
+    }
+    @include for-mobile-layout {
+        max-width: 100% !important;
+    }
+}

@@ -1,0 +1,214 @@
+.task-preview {
+    position: relative;
+    gap: 1px;
+    margin-bottom: 1px;
+    border-right: 5px solid rgba(0, 0, 0, 0.1);
+    padding-inline: 0.2em;
+    height: 2rem;
+    line-height: 2;
+    .MuiButton-root {
+        color: #ffffff;
+        &:hover {
+            background-color: transparent;
+        }
+        span {
+            text-transform: capitalize;
+        }
+    }
+    .task-expand-btn {
+        .MuiButton-root {
+            min-width: unset;
+        }
+        position: absolute;
+        width: 1.875rem;
+        height: 1.875rem;
+        left: -35px;
+        .more-info {
+            @include for-narrow-layout {
+                opacity: 1;
+            }
+            opacity: 0;
+            background-color: #e6e9ef;
+            color: #323338;
+            width: 1.125rem;
+            height: 1.125rem;
+            &.open {
+                opacity: 1;
+                color: #0073ea;
+            }
+        }
+    }
+
+    &:hover {
+        .task-content,
+        .member-picker,
+        .date {
+            background-color: #e6e9ef !important;
+        }
+        .task-title-span {
+            @include for-narrow-layout {
+                max-width: 15ch !important;
+            }
+        }
+        .more-info {
+            opacity: 1;
+        }
+    }
+    .task-content {
+        position: sticky;
+        top: 0;
+        left: 0;
+        @include for-narrow-layout {
+            left: 4%;
+        }
+        z-index: 2;
+        background-color: $clr3;
+        padding-inline-start: 0.625rem;
+        padding-inline-end: 0.625rem;
+        &.focused {
+            background: #cce5ff !important;
+        }
+        .task-title-input {
+            background: white;
+            height: 1.5rem;
+            color: #333;
+            outline: transparent;
+            border: 1px dashed #c6c8d0;
+            &:hover {
+                .edit-title-btn {
+                    display: block;
+                }
+            }
+        }
+        .title-preview {
+            span {
+                width: fit-content;
+            }
+            .edit-title-btn {
+                background: transparent;
+                font-size: 0.875rem;
+                color: #676879;
+                margin: 0 0 0 8px;
+                padding: 2px 8px 4px;
+                &:hover {
+                    background: white;
+                }
+                height: 1.5rem;
+                border-radius: 4px;
+                margin-right: 8px;
+                border: none;
+            }
+            .task-title-span {
+                line-height: 1.5;
+                border-radius: 2px;
+                padding: 0 3px;
+                text-overflow: ellipsis;
+                max-width: 40ch;
+                white-space: nowrap;
+                overflow: hidden;
+                @include for-narrow-layout {
+                    max-width: 20ch;
+                }
+            }
+        }
+        // span {
+        //     white-space: nowrap;
+        //     overflow: hidden;
+        //     text-overflow: ellipsis;
+        //     width: 20rem;
+        // }
+        .task-chat {
+            padding-inline-end: 5px;
+            width: 1.4rem;
+            cursor: pointer;
+            color: #c5c7d0;
+            transition: color 0.2s ease;
+            position: relative;
+            .task-chat-updates {
+                opacity: 0.8;
+                width: 10px;
+                height: 10px;
+                left: 8px;
+                bottom: 7px;
+                padding: 5px;
+                position: absolute;
+                border: 1px solid #0073ea;
+                border-radius: 10px;
+                font-size: 0.5rem;
+                line-height: 0.5;
+                font-weight: 400;
+                color: #ffffff;
+                background: #0073ea;
+            }
+            &:hover {
+                color: $clr1;
+            }
+        }
+    }
+    .task-items {
+        & > * {
+            background-color: $clr3;
+            width: 9.375rem;
+            text-align: center;
+            margin-right: 1px;
+        }
+        .date {
+            position: relative;
+            font-size: 0.8125rem;
+            cursor: text;
+            // border-right:1px solid black;
+            border: transparent;
+            transition: 0.2s border ease-in;
+            margin-right: 3px;
+            &:hover {
+                border: 1px dashed #333333;
+            }
+            .rdrCalendarWrapper {
+                position: fixed;
+                transform: translateX(-25%);
+                z-index: 2;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            }
+        }
+        .fold {
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            border-width: 0;
+            border-style: solid;
+            background: inherit;
+            filter: brightness(115%);
+            display: block;
+            border-color: transparent #fff transparent #fff;
+            -webkit-transition: border-width 0.3s ease-out;
+            -moz-transition: border-width 0.3s ease-out;
+            -ms-transition: border-width 0.3s ease-out;
+            -o-transition: border-width 0.3s ease-out;
+            transition: border-width 0.3s ease-out;
+        }
+        .status {
+            color: #fff;
+            position: relative;
+            &.fill {
+                &:hover {
+                    .fold {
+                        border-width: 0px 13px 13px 0px;
+                    }
+                }
+            }
+        }
+        .priority {
+            color: #fff;
+            position: relative;
+            &.fill {
+                &:hover {
+                    .fold {
+                        border-width: 0px 13px 13px 0px;
+                    }
+                }
+            }
+        }
+    }
+}

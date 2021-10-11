@@ -1,0 +1,51 @@
+.home-page {
+    height: 100vh;
+    overflow: auto;
+    background: linear-gradient(180deg, $clr2, #ffffff);
+    .home-details {
+        padding: 1em;
+        font-size: x-large;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include for-narrow-layout {
+            font-size: large;
+            flex-direction: column;
+            gap: 2rem;
+            color: #333333 !important;
+            &.one,
+            &.three {
+                flex-direction: column-reverse;
+            }
+        }
+        .hero-title {
+            margin: 0;
+            padding: 0.25rem;
+        }
+        .block-quote {
+            padding: 1em;
+            border-left: 4px solid hsla(0, 0%, 99%, 0.3);
+            line-height: 1.7;
+            margin: 0;
+            max-width: 25rem;
+        }
+        .hero-img {
+            flex-basis: 50%;
+            height: 22rem;
+            width: 22rem;
+            @include for-narrow-layout {
+                width: 100%;
+            }
+        }
+        &.one {
+            color: whitesmoke;
+            padding-top: 120px;
+        }
+        &.two {
+            color: #2f4e6f;
+        }
+        &.three {
+            color: #333333;
+        }
+    }
+}

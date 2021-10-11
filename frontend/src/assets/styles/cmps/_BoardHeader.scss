@@ -1,0 +1,129 @@
+.board-header {
+    padding: 13px 30px 0;
+    position: relative;
+    .header-top {
+        padding-bottom: 5px;
+        button {
+            text-align: center;
+            background-color: transparent;
+            border: 0;
+            font-size: 0.875rem;
+            &:hover {
+                border-radius: 4px;
+                background-color: #e6e9ef;
+            }
+        }
+        .board-title-container {
+            flex: 1;
+            gap: 5px;
+            h1 {
+                padding-bottom: 5px;
+                display: inline-block;
+                margin: 0;
+                font-size: 1.7rem;
+                @include for-normal-layout {
+                    font-size: 1.4rem;
+                }
+                padding: 0 4px;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                cursor: text;
+                &:hover {
+                    border: 1px solid rgb(197, 199, 208) !important;
+                }
+                &:focus {
+                    border: 1px solid #0073ea !important;
+                }
+            }
+            button {
+                width: 2rem;
+                height: 2rem;
+                padding: 4px;
+            }
+            .tool-tip {
+                background-color: green;
+            }
+            .header-info {
+                background-color: transparent;
+                span {
+                    color: #b8b6b6;
+                    &.hide {
+                        color: #525050;
+                    }
+                }
+            }
+        }
+
+        .board-header-actions {
+            gap: 2px;
+            button.header-action {
+                font-weight: 500;
+                padding: 4px 8px;
+                line-height: 2;
+                span {
+                    padding-inline-end: 8px;
+                }
+                &.board-members-avatars {
+                    padding: 5px;
+                    .MuiAvatar-colorDefault {
+                        width: 28px;
+                        height: 28px;
+                        font-size: 0.9rem;
+                    }
+                    @include for-normal-layout {
+                        display: none;
+                    }
+                }
+                &.invite {
+                    @include for-max-narrow-layout {
+                        display: none;
+                    }
+                }
+                &.add-to-board {
+                    border-radius: 4px;
+                    border: 1px solid rgb(197, 199, 208);
+                    margin: 0 0.3rem;
+                    span {
+                        font-size: 0.6rem;
+                    }
+                    @include for-narrow-layout {
+                        display: none;
+                    }
+                }
+                &.activity {
+                    @include for-max-narrow-layout {
+                        display: none;
+                    }
+                }
+                &.more {
+                    span {
+                        font-size: 1.075rem;
+                        padding-inline-end: 0;
+                    }
+                }
+            }
+        }
+    }
+    .board-desc-container {
+        padding: 5px 0px;
+        padding-inline-start: 5px;
+        span {
+            padding: 4px;
+        }
+    }
+    .board-views {
+        position: relative;
+        border-bottom: 1px solid #e7eaf0;
+        .board-views-btn {
+            button {
+                padding: 7px 16px;
+                color: #323338;
+                font-size: 0.8rem;
+                text-transform: capitalize;
+            }
+            &.active {
+                box-shadow: 0px 1px 0px 0px #0073ea;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.updates-container {
+  align-items: stretch;
+  form {
+    display: flex;
+    flex-direction: column;
+    .tox-tinymce {
+      border-radius: 10px !important;
+      border: 1px #0073ea solid !important;
+    }
+    .comment-update-btn {
+      justify-self: flex-end;
+    }
+  }
+}
+.tox-statusbar__wordcount,
+.tox-statusbar__branding,
+.tox-statusbar__path-item {
+  display: none !important;
+}
+.btn-container {
+  padding-top: 0.375rem;
+  .comment-update-btn {
+    height: 2rem;
+    width: 3.75rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #0073ea;
+  }
+}

@@ -88,9 +88,7 @@ $ npm i
 ## Team
 | <a href="https://github.com/zoharharuv" target="_blank">**Zohar Haruv**</a> | <a href="https://github.com/segaltal1" target="_blank">**Tal Segal**</a> | <a href="https://github.com/guykamin1" target="_blank">**Guy Kamin**</a> |
 | :---: |:---:| :---:|
-| [![Zohar Haruv](https://avatars.githubusercontent.com/u/72209707?v=4)](https://www.linkedin.com/in/zohar-haruv-a6690b210/)    |
-[![Tal Segal](https://res.cloudinary.com/xero53/image/upload/v1633942582/domingo/pp_yr2dfj.jpg)](https://www.linkedin.com/in/tal-segal1/) |
-[![Guy Kamin](https://media-exp1.licdn.com/dms/image/C4D03AQGtUqbrXdra8g/profile-displayphoto-shrink_800_800/0/1621267410364?e=1639612800&v=beta&t=wHVy4Bs2kWNAQPeyl_ILkn0rZP58HZSsdd-4QMU0eMM)](https://www.linkedin.com/in/guy-kamin-499565182/)  |
+| [![Zohar Haruv](https://avatars.githubusercontent.com/u/72209707?v=4)](https://www.linkedin.com/in/zohar-haruv-a6690b210/)    |[![Tal Segal](https://res.cloudinary.com/xero53/image/upload/v1633942582/domingo/pp_yr2dfj.jpg)](https://www.linkedin.com/in/tal-segal1/) |[![Guy Kamin](https://media-exp1.licdn.com/dms/image/C4D03AQGtUqbrXdra8g/profile-displayphoto-shrink_800_800/0/1621267410364?e=1639612800&v=beta&t=wHVy4Bs2kWNAQPeyl_ILkn0rZP58HZSsdd-4QMU0eMM)](https://www.linkedin.com/in/guy-kamin-499565182/)  |
 | <a href="https://github.com/zoharharuv" target="_blank">`https://github.com/zoharharuv`</a> | <a href="https://github.com/segaltal1" target="_blank">`https://github.com/segaltal1`</a> | <a href="https://github.com/guykamin1" target="_blank">`https://github.com/guykamin1`</a> |
 
 

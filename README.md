@@ -1,4 +1,5 @@
 ***Check it out LIVE <a href="https://domingo-ca.herokuapp.com/#/">DOmingo</a>*** 
+***You can also watch the live demo presentation at <a href="https://www.youtube.com/watch?v=ydA8ZIczDWQ">YouTube</a>*** 
 
 # DOmingo
 
@@ -26,6 +27,11 @@
 
 
 ## Parts of our app
+<img src="https://i.im.ge/2021/10/23/o7lg6M.gif" alt="o7lg6M.gif" border="0">  
+<p float="left">
+  <img src="https://i.im.ge/2021/10/23/o7lVeq.gif" alt="o7lVeq.gif" border="0">
+<img src="https://i.im.ge/2021/10/23/o7rsDK.gif" alt="o7rsDK.gif" border="0">
+</p>
 
 ### Groups and Tasks
 
@@ -38,7 +44,6 @@
 ### Side navigation bar, here you can:
 
 - check incoming notifications
-- navigate to "My Week" page
 - navigate to your profile page
 - logout
 
@@ -50,8 +55,11 @@
 - extensive search and filter system
 - switch to the dashboard to view statistics about idividuals
 
----
 
+### Respnosive
+<img src="https://i.im.ge/2021/10/14/orCvCm.jpg" alt="respnsive" />
+
+---
 ### Clone
 
 - Clone this repo to your local machine using `https://github.com/zoharharuv/domingo.git`
@@ -81,14 +89,14 @@ $ npm i
 
 ### Step 3
 
-- 🔃 Create a new pull request using <a href="https://github.com/zoharharuv/domingo.git/pulls/" target="_blank">`https://github.com/zoharharuv/domingo.git/pulls`</a>.
+- 🔃 Create a new pull request using <a href="https://github.com/zoharharuv/domingo/pulls" target="_blank">`https://github.com/zoharharuv/domingo/pulls`</a>.
 
 ---
 
 ## Team
 | <a href="https://github.com/zoharharuv" target="_blank">**Zohar Haruv**</a> | <a href="https://github.com/segaltal1" target="_blank">**Tal Segal**</a> | <a href="https://github.com/guykamin1" target="_blank">**Guy Kamin**</a> |
 | :---: |:---:| :---:|
-| [![Zohar Haruv](https://avatars.githubusercontent.com/u/72209707?v=4)](https://www.linkedin.com/in/zohar-haruv-a6690b210/)    |[![Tal Segal](https://res.cloudinary.com/xero53/image/upload/v1633942582/domingo/pp_yr2dfj.jpg)](https://www.linkedin.com/in/tal-segal1/) |[![Guy Kamin](https://media-exp1.licdn.com/dms/image/C4D03AQGtUqbrXdra8g/profile-displayphoto-shrink_800_800/0/1621267410364?e=1639612800&v=beta&t=wHVy4Bs2kWNAQPeyl_ILkn0rZP58HZSsdd-4QMU0eMM)](https://www.linkedin.com/in/guy-kamin-499565182/)  |
+| [![Zohar Haruv](https://avatars.githubusercontent.com/u/72209707?v=4)](https://www.linkedin.com/in/zohar-haruv-a6690b210/)    |[![Tal Segal](https://i.im.ge/2021/10/23/o7rwEp.png)](https://www.linkedin.com/in/tal-segal1/) |[![Guy Kamin](https://media-exp1.licdn.com/dms/image/C4D03AQGtUqbrXdra8g/profile-displayphoto-shrink_800_800/0/1621267410364?e=1639612800&v=beta&t=wHVy4Bs2kWNAQPeyl_ILkn0rZP58HZSsdd-4QMU0eMM)](https://www.linkedin.com/in/guy-kamin-499565182/)  |
 | <a href="https://github.com/zoharharuv" target="_blank">`https://github.com/zoharharuv`</a> | <a href="https://github.com/segaltal1" target="_blank">`https://github.com/segaltal1`</a> | <a href="https://github.com/guykamin1" target="_blank">`https://github.com/guykamin1`</a> |
 
 
